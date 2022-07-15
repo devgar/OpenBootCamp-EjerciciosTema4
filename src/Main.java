@@ -53,6 +53,21 @@ class SmartWatch extends SmartDevice {
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        SmartPhone iPhone13 = new SmartPhone("Apple", "iPhone 13", "iOS 15", 2021, false);
+        SmartWatch SamsungFit = new SmartWatch("Samsung", "Fit 2", "FreeRTOS", 2020, "Plástico", "Scarlet");
+
+        System.out.println("Fabricante: " + iPhone13.fabricante);
+        System.out.println("Modelo: " + iPhone13.modelo);
+        System.out.println("OS: " + iPhone13.OS);
+        System.out.println("Año: " + iPhone13.year);
+        System.out.println("Tiene sensor de huellas: " + (iPhone13.tieneSensorDeHuellas ? "Sí" : "No"));
+        System.out.println();
+        System.out.println("Fabricante: " + SamsungFit.fabricante);
+        System.out.println("Modelo: " + SamsungFit.modelo);
+        System.out.println("OS: " + SamsungFit.OS);
+        System.out.println("Año: " + SamsungFit.year);
+        System.out.println("Material de la pulsera: " + SamsungFit.MaterialPulsera);
+        System.out.println("Color de la pulsera: " + SamsungFit.ColorPulsera);
+
     }
 }
